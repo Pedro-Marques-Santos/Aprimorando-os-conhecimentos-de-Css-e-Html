@@ -8,82 +8,146 @@ body, ul, li, p {
     padding: 0;
     list-style: none;
     font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"Nunito" ,Arial, Helvetica, sans-serif ;
 }
 
 body {
-    margin-bottom: 100px;
-}
-
-.marcador-1 {
-    border: 1px solid red;
+    background: #F5F5F5;
 }
 
 a {
     text-decoration: none;
-    color: white;
+}
+
+.menu a {
+    color: black;
 }
 
 header {
-    background: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    background: #0BF96A;
+}
+
+.marcador-3 {
+    border: 1px solid red;
 }
 
 .menu {
     display: flex;
+    max-width: 920px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
 }
 
-.menu li {
-    margin-left: 10px;
-}
-
-.menu li a {
-    display: block;
-    padding: 10px;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 100px;
-}
-
-img {
-    max-width:100%;
-    display: block;
-}
-
-/* Flexbox */
-
-.flex {
+.menu-lista {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    max-width: 800px;
+}
+
+.texto-menu {
+    font-size: 16px;
+}
+
+.menu ul li {
+    padding: 3px;
+    margin-left: 8px;
+}
+
+.titulo-inicial {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.titulo-inicial h1 {
+    font-family: "Nunito", 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.linha-inicial {
+    width: 140px;
+    height: 1px;
+    background-color: #E10BF9;
+    line-height: 1;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.titulo-inicial-2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-family: "Nunito", 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+
+/*       quem somos - section         */
+
+.conteudo-quemsomos {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.flex div {
-    flex: 1 1 200px;
+
+.texto-quemsomos {
+    font-size: 16px;
+    line-height: 21.82px;
+    font-family:"Nunito", Times, serif;
+}
+
+.campotexto-quemsomos {
+    padding: 15px;
+    margin: auto 0;
+}
+
+
+/*       Nossos Cursos                  */
+
+.conteudo-nossoscursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.card-nossoscursos {
+    width: 290px;
     margin: 10px;
 }
 
-/* Css Grid */
-
-.grid1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 780px;
-    margin: 0 auto;
-    grid-gap: 20px;
+.titulo-card-nossoscursos {
+    text-align: center;
+    font-size: 22px;
+    padding: 5px;
 }
 
+.centraliza-imagem-card-nossoscursos {
+    display: flex;
+    margin: 0 auto;
+}
 
+.texto-card-nossoscursos {
+    font-size: 17px;
 
-@media (max-width: 767.98px) { 
-    .grid1 {
-        grid-template-columns: repeat(2, 1fr); /* duas colunas */
+}
+
+@media (max-width: 800px) { 
+    .conteudo-quemsomos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .linha-inicial {
+        width: 140px;
     }
 }
